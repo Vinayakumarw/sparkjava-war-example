@@ -9,6 +9,20 @@
 	<version>1.0</version>
 	<packaging>war</packaging>
 
+      <distributionManagement>
+          <repository>
+            <id>central</id>
+            <name>ubuntu-releases</name>
+            <url>http://192.168.12.128:8081/artifactory/local-maven-devops</url>
+          </repository>
+		
+         <snapshotRepository>
+           <id>snapshots</id>
+            <name>ubuntu-snapshots</name>
+            <url>http://192.168.12.128:8081/artifactory/local-maven-devops</url>
+         </snapshotRepository>
+     </distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.sparkjava</groupId>
