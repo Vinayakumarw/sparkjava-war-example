@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        MAVEN_HOME = tool 'Maven3' // Make sure Maven3 is configured in Jenkins
-        PATH = "${MAVEN_HOME}/bin:${PATH}"
-    }
-
     stages { 
         stage('Checkout') {
             steps {
